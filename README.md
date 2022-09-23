@@ -85,9 +85,9 @@ X_test_scaled = X_test_scaled.reshape(-1,28,28,1)
 model = keras.Sequential([
     tf.keras.layers.Conv2D(32,kernel_size=3,activation="relu",padding="same"),
     tf.keras.layers.MaxPool2D(),
-    tf.keras.layers.Conv2D(32,kernel_size=3,activation="relu"),
+    tf.keras.layers.Conv2D(16,kernel_size=3,activation="relu"),
     tf.keras.layers.MaxPool2D(),
-    tf.keras.layers.Conv2D(32,kernel_size=3,activation="relu"),
+    tf.keras.layers.Conv2D(16,kernel_size=3,activation="relu"),
     tf.keras.layers.MaxPool2D(),
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(10,activation="softmax")
