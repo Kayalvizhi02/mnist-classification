@@ -1,4 +1,7 @@
-# Convolutional Deep Neural Network for Digit Classification
+## EXP.NO : 3
+## DATE :
+
+# <p align="center">  Convolutional Deep Neural Network for Digit Classification </p>
 
 ## AIM:
 
@@ -47,6 +50,8 @@ Evaluate the model with the testing data
 Fit the model and predict the single input
 
 ## PROGRAM:
+#### Developed by : KAYALVIZHI M
+#### Register Number : 212220230024
 
 ```python
 import numpy as np
@@ -114,6 +119,7 @@ img_28_gray_inverted_scaled = img_28_gray_inverted.numpy()/255.0
 x_single_prediction = np.argmax(model.predict(img_28_gray_inverted_scaled.reshape(1,28,28,1)),axis=1)
 print(x_single_prediction)     
 ```
+
 ## OUTPUT:
 
 ### Training Loss, Validation Loss Vs Iteration Plot
